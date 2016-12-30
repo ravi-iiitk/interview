@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Test">
+  <parameter name="browser" value="Firefox"/>
+  <parameter name="baseURL" value="http://phptravels.net/"/>
+   <groups>
+    <define name="home-smoke">
+      <include name="mandatory"/>
+      <include name="home"/>
+      <include name="smoke"/>
+    </define>
+  
+   <define name="home-reg">
+      <include name="mandatory"/>
+      <include name="home"/>
+      <include name="regression"/>
+    </define>
+    
+    <define name="flight-smoke">
+      <include name="mandatory"/>
+      <include name="flight"/>
+      <include name="smoke"/>
+    </define>
+  
+    <run>
+      <include name="flight-smoke"/>
+      <exclude name="home"/>
+    </run>
+  </groups>
+
+  
+		<classes>
+			<class name="com.visa.driver.Driver" />
+			<class name="com.visa.testcases.HomePageTCRun"/>
+			<class name="com.visa.testcases.FlightSearchTCRun"/>
+		</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

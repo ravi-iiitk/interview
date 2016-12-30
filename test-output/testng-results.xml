@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="45494" started-at="2016-12-29T15:07:34Z" finished-at="2016-12-29T15:08:19Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="45494" started-at="2016-12-29T15:07:34Z" finished-at="2016-12-29T15:08:19Z">
+      <class name="com.visa.testcases.HomePageTCRun">
+        <test-method status="PASS" signature="searchHotelTC1()[pri:0, instance:com.visa.testcases.HomePageTCRun@5ec0a365]" name="searchHotelTC1" duration-ms="8142" started-at="2016-12-29T20:37:59Z" finished-at="2016-12-29T20:38:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelTC1 -->
+        <test-method status="PASS" signature="searchHotelTC2()[pri:0, instance:com.visa.testcases.HomePageTCRun@5ec0a365]" name="searchHotelTC2" duration-ms="12116" started-at="2016-12-29T20:38:07Z" finished-at="2016-12-29T20:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotelTC2 -->
+      </class> <!-- com.visa.testcases.HomePageTCRun -->
+      <class name="com.visa.driver.Driver">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.visa.driver.Driver@78c03f1f]" name="openBrowser" is-config="true" duration-ms="14187" started-at="2016-12-29T20:37:34Z" finished-at="2016-12-29T20:37:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="openWebSite(java.lang.String)[pri:0, instance:com.visa.driver.Driver@78c03f1f]" name="openWebSite" duration-ms="10966" started-at="2016-12-29T20:37:48Z" finished-at="2016-12-29T20:37:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://phptravels.net/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openWebSite -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.visa.driver.Driver@78c03f1f]" name="closeBrowser" is-config="true" duration-ms="5214" started-at="2016-12-29T20:38:20Z" finished-at="2016-12-29T20:38:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.visa.driver.Driver -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

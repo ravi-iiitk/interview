@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <parameter name="baseURL" value="http://phptravels.net/"/>
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.visa.testcases.HomePageTCRun">
+        <methods>
+          <include name="searchHotelTC2"/>
+          <include name="searchHotelTC1"/>
+        </methods>
+      </class> <!-- com.visa.testcases.HomePageTCRun -->
+      <class name="com.visa.driver.Driver">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="openWebSite" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.visa.driver.Driver -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
