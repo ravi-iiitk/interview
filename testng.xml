@@ -9,35 +9,40 @@
   <parameter name="browser" value="Firefox"/>
   <parameter name="baseURL" value="http://phptravels.net/"/>
    <groups>
-    <define name="home-smoke">
+    <define name="smoke-tcs">
       <include name="mandatory"/>
-      <include name="home"/>
       <include name="smoke"/>
     </define>
   
-   <define name="home-reg">
+   <define name="reg-tcs">
       <include name="mandatory"/>
-      <include name="home"/>
       <include name="regression"/>
     </define>
     
-    <define name="flight-smoke">
+   <define name="home-tcs">
+      <include name="mandatory"/>
+      <include name="home"/>
+    </define>
+    
+    <define name="flight-tcs">
       <include name="mandatory"/>
       <include name="flight"/>
-      <include name="smoke"/>
     </define>
   
+    <define name="hotel-tcs">
+      <include name="mandatory"/>
+      <include name="hotel"/>
+    </define>
+    
     <run>
-      <include name="flight-smoke"/>
-      <exclude name="home"/>
+      <include name="hotel-tcs"/>
+      <exclude name="regression"></exclude>
     </run>
   </groups>
-
-  
-		<classes>
-			<class name="com.visa.driver.Driver" />
+	<classes>
+			<class name="com.visa.driver.Driver"/>
 			<class name="com.visa.testcases.HomePageTCRun"/>
 			<class name="com.visa.testcases.FlightSearchTCRun"/>
-		</classes>
+	</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

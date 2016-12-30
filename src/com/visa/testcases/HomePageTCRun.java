@@ -10,7 +10,7 @@ import jxl.read.biff.BiffException;
 public class HomePageTCRun {
 	static Logger logger = Driver.logger;
 	
-	@Test(groups = { "smoke", "home" })
+	@Test(groups = { "smoke","hotel", "home" })
 	public void searchHotelTC1() throws BiffException, IOException
 	{
 		HomePageTC hmpgTC1 = new HomePageTC();	
@@ -20,7 +20,7 @@ public class HomePageTCRun {
 		//hmpgTC2.validateHotelSearch();
 	}
 	
-	@Test(groups = { "regression", "home" })
+	@Test(groups = { "regression","hotel","home"})
 	public void searchHotelTC2() throws BiffException, IOException
 	{
 		HomePageTC hmpgTC2 = new HomePageTC();
@@ -28,14 +28,14 @@ public class HomePageTCRun {
 		logger.info("Functional Test for hotel search executed taking second data row from Data sheet");
 
 	}
-	@Test(groups = { "smoke", "home" })
+	@Test(groups = { "smoke", "signup" , "home"})
 	public void signUpTC1() throws BiffException, IOException
 	{
 		HomePageTC hmpgTC3 = new HomePageTC();
 		hmpgTC3.validateSignUp(1);
 		logger.info("Functional Test for SignUp executed taking first data row from Data sheet");
 	}
-	@Test(groups = { "smoke", "home" })
+	@Test(groups = { "smoke", "signin", "home"})
 	public void signInTC1() throws BiffException, IOException
 	{
 		HomePageTC hmpgTC4 = new HomePageTC();
